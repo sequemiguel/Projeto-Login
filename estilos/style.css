@@ -36,7 +36,6 @@ section#login{
     height: 650px;
     border-radius: 30px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.438);
-
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
 }
@@ -46,7 +45,7 @@ section#login > div#imagem{
     background: #5f2c82 url('../imagens/Обои\ с\ Dodge\ Challenger.jfif') no-repeat;
     background-size: cover;
     background-position:  center center;
-    height: 200px;
+    height: 250px;
 }
 
 section#login > div#formulario{
@@ -55,10 +54,96 @@ section#login > div#formulario{
 }
 
 div#formulario > h1{
+    font-size: 30px;
     text-align: center;
     margin-bottom: 10px;
 }
 
+div#formulario > p{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
 div#formulario{
     font-size: 0.8em;
+}
+form > div.campo{
+    background-color: white;
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    margin: 5px 0px;
+    border: 1px solid black;
+}
+
+div.campo > label {
+    display: none;
+
+}
+
+div.campo > i {
+    color: black;
+    background-color: white;
+    font-size: 2em;
+    float: right;
+    padding: 0px 10px 4px 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+}
+
+div.campo > input{
+    background-color: white;
+    font-size: 1em;
+    border-radius: 10px;
+    height: 40px;
+    width: 290px;
+    outline: none;
+    padding: 15px;
+    border: none;
+}
+
+div.campo > input::placeholder{
+    color: black;
+    font-size: 18px;
+}
+
+form > input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #49a09d;
+    color: white;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 10px;
+}
+form > input[type=submit]:hover{
+    background-color: #49a09d96;
+    cursor: pointer;
+}
+
+form > a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: #49a09d;
+    border: 1px solid #49a09d;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+}
+
+form > a.botao:hover{
+    background-color: #49a09d96;
+}
+
+form > a.botao > i {
+    font-size: 1.5em;
 }
