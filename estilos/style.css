@@ -14,7 +14,7 @@ Roxo: #5f2c82
 }
 
 body, html{
-    background-color: #5f2c82;
+    background-image: linear-gradient(to top, #49a09d, #5f2c82);
     height: 100vh;
     width: 100vw;
 }
@@ -32,17 +32,20 @@ section#login{
     transform: translate(-50%, -50%);
     overflow: hidden;
     background-color: white;
-    width: 250px;
-    height: 500px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0.450);
+    width: 350px;
+    height: 650px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.438);
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem{
     display: block;
-    background: #5f2c82 url('../imagens/metal.jpg') no-repeat;
+    background: #5f2c82 url('../imagens/Обои\ с\ Dodge\ Challenger.jfif') no-repeat;
     background-size: cover;
-    background-position: left bottom;
+    background-position:  center center;
     height: 200px;
 }
 
