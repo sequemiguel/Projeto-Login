@@ -20,14 +20,13 @@
                 <form action="login.php" method="post" autocomplete="on">
                     <div class="campo">
                         <label for="ilogin">E-mail</label>
-                        <i class="bi bi-lock-fill"></i>
+                        <i class="bi bi-person-fill"></i>
                         <input type="email" name="login" id="ilogin" placeholder="Seu Email" autocomplete="email" required maxlength="50">
                     </div>
                     <div class="campo">
-                        <label for="isenha">Senha</label>
-                        <i class="bi bi-eye-slash-fill"></i>
+                        <i class="bi-eye-slash-fill" id="btn-senha" onclick="mostrarSenha()"></i>
                         <input type="password" name="senha
-                        " id="isenha" placeholder="Sua senha" autocomplete="current-password" required mixlength="8" maxlength="20">
+                        " id="senha" placeholder="Sua senha" autocomplete="current-password" required mixlength="8" maxlength="20">
                     </div>
                     <input type="submit" value="Entrar">
                     <a href="esqueci.html" class="botao"> Esqueci a senha<a>
@@ -35,5 +34,19 @@
             </div>
         </section>
     </main>
+    <script>
+        function mostrarSenha(){
+        var inputPass = document.getElementById('senha')
+        var btnShowPass = document.getElementById('btn-senha')
+
+        if(inputPass.type === 'password'){
+            inputPass.setAttribute('type', 'text')
+            btnShowPass.classList.replace('bi-eye-slash-fill','bi-eye-fill')
+        }else{
+            inputPass.setAttribute('type', 'password')
+            btnShowPass.classList.replace('bi-eye-fill', 'bi-eye-slash-fill')
+        }
+    }     
+    </script>
 </body>
 </html>
